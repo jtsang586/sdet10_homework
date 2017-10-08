@@ -20,7 +20,7 @@ describe Postcodes::SinglePostcode do
     end
 
     it "should have country of either England, Scotland or Wales" do
-        expect(@postcode.get_single_postcode_body['result']['country']).to include("England" || "Scotland" || "Wales") 
+        expect(@postcode.get_single_postcode_body['result']['country']).to match("England").or match("Scotland").or match("Wales") 
     end    
 
     it "should have the same postcode as the one in the instance" do 

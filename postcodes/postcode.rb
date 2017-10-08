@@ -77,7 +77,7 @@ random_postcode = random_postcode.Generate[0].gsub(' ', '')
 
 postcodes = Postcodes::SinglePostcode.new(random_postcode)
 
-p multi_postcodes.get_multiple_postcodes_body['result']
+# multi_postcodes.get_multiple_postcodes_body['result']
 
 
 
